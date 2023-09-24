@@ -131,14 +131,15 @@ address { font-style: normal; }
 ion-icon { pointer-events: none; }
 
 html {
-  font-family: var(--fontFamily-inter);
+  font-family: 'Ubuntu', sans-serif;
+
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--bg-white);
-  color: var(--text-eerie-black-2);
+  background-color: #ADACA3;
+  color:#3A3328;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -589,7 +590,7 @@ address.footer-text { margin-block-end: 15px; }
 
   .btn { padding: 20px 50px; }
 
-  .section { padding-block: 150px; }
+  .section { padding-block: 50px; }
 
   .scrollbar-item { min-width: calc(50% - 20px); }
 
@@ -858,3 +859,5 @@ address.footer-text { margin-block-end: 15px; }
   .footer-bottom-link { font-size: 1.6rem; }
 
 }
+
+

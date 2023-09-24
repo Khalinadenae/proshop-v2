@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800&display=swap');
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 80vh;
+    background-color: #3A3328;
+  }
+  
+  .image1 {
+    background-image: url('./homeassets/images/Screen\ Shot\ 2023-09-24\ at\ 6.52.50\ PM.png');
+    background-size: cover;
+    background-position: center;
+ 
+  }
+  
+  .hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #D7CDB9;
+  }
+  .hero-cta{
+    color: black;
+
+  }
+  .hero-btn{
+    color: #B44500;
+  }
+  .hero-btn{
+    background-color: #B44500;
+  }
+  .hero-text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+  .hero-text h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
+
+  }
+  
+  .image2 {
+    background-image: url('./homeassets/images/68A901AB-91AA-4B46-88D6-88C460D27E43.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+.image1,
+.image2 {
+  background-size: cover;
+  background-position: center;
+
+}
+
+.image1::before,
+.image2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, .3); Adjust the last value for opacity */
+}
+
+
+.about-section {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .about-title {
+    width: 30%;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 20px;
+  }
+  
+  .about-content {
+    width: 70%;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  em{
+    color: #B44500;
+  }
+
+
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scroll-content {
+    animation: scroll 10s linear infinite;
+    color: #B44500;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+
+  }
+  
+  span {
+    font-size: 2em;
+    margin-right: 1em; /* Add some space between the texts */
+  }
+  span {
+    font-size: 2em;
+  }
+  
+  .space {
+    padding-left: 1em;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import heroBanner from './homeassets/images/hero-banner.png';
 import { Link } from 'react-router-dom';
-
+import './homepage.css'
 
 const HomePage = () => {
     const currentYear = new Date().getFullYear();
@@ -46,9 +46,24 @@ const HomePage = () => {
             </button>
           </div>
         </header> */}
+
         <main>
+        <div className="hero-container">
+      <div className="image1">
+      </div>
+      <div className="image2">  </div>
+      <div className="hero-text">
+        <h1>Just Landed!</h1>
+        <p> Shop the latest drop <br />
+            from move plotters apparel</p>
+        <Link to="/shop" className="btn btn-primary hero-btn">
+            <span className="hero-cta">Shop Now</span>
+        
+          </Link>
+      </div>
+    </div>
           <article>
-            <div className="hero">
+            {/* <div className="hero">
               <div className="container">
                 <div className="hero-content">
                   <p className="hero-subtitle title">$120.00</p>
@@ -70,13 +85,36 @@ const HomePage = () => {
                 </div>
                 <img src={require('./homeassets/images/hero-shape-2.png')} width="360" height="133" alt="shape" className="shape shape-2" />
               </div>
-            </div>
-            <section className="section product" aria-label="product">
+            </div> */}
+
+
+<div className="about-section">
+      <div className="about-title">Who We Are</div>
+      <div className="about-content">
+        <p>
+      <em> Move Plotters</em>  - Ukrainian clothing brand that embodies utilitarian, minimalist, and comfortable design. The dynamic rhythm of life and the yearning for freedom among creative individuals have inspired us to create distinctive oversized apparel. Original design and meticulous attention to detail are the hallmarks of our work. Each model is carefully crafted down to the tiniest elements. 
+      Move Plotters - Ukrainian clothing brand that embodies utilitarian, minimalist, and comfortable design. The dynamic rhythm of life and the yearning for freedom among creative individuals have inspired us to create distinctive oversized apparel. Original design and meticulous attention to detail are the hallmarks of our work. Each model is carefully crafted down to the tiniest elements. 
+        </p>
+
+      </div>
+    </div>
+
+
+
+    <div className="scroll-container">
+      <div className="scroll-content">
+        <span>Create Your Own Path</span>
+        <span className="space"> </span>
+
+      </div>
+    </div>
+
+            {/* <section className="section product" aria-label="product">
               <div className="container">
                 <h2 className="h2 section-title title text-center">Explore new arrivals</h2>
                 <ul className="product-list has-scrollbar">
                   {/* Product list items */}
-                  <li className="scrollbar-item">
+                  {/* <li className="scrollbar-item">
               <div className="product-card text-center">
 
                 <div className="card-banner">
@@ -173,26 +211,11 @@ const HomePage = () => {
 
 
 
-            </section>
+            </section> */}
+ 
 
 
 
-
-            <section className="offer has-bg-image" style={sectionStyle}>
-      <div className="container">
-
-        <div className="offer-card" style={{width:"60vw", margin:"0 auto"}}>
-
-          <h2 className="title card-title">WHO WE ARE</h2>
-
-          <p className="card-text">
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-
-        </div>
-
-      </div>
-    </section>
 
             <section className="section feature" aria-label="feature-label">
   <div className="container">
@@ -288,7 +311,7 @@ const HomePage = () => {
         </div>
       </li>
 
-      <li>
+      {/* <li>
         <div className="product-card text-center">
 
           <div className="card-banner">
@@ -371,7 +394,7 @@ const HomePage = () => {
           </div>
 
         </div>
-      </li>
+      </li> */}
       {/* Repeat similar blocks for other products */}
 
     </ul>
@@ -382,6 +405,22 @@ const HomePage = () => {
 </section>
 
 
+
+<section className="offer has-bg-image" style={sectionStyle}>
+      <div className="container">
+
+        <div className="offer-card" style={{width:"60vw", margin:"0 auto"}}>
+
+          <h2 className="title card-title">WHO WE ARE</h2>
+
+          <p className="card-text">
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
 
 
           </article>
