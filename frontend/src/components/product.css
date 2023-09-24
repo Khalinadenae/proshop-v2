@@ -4,4 +4,5 @@
 
 .card{
     --bs-card-box-shadow: 0;
+ --bs-card-border-color: transparent;
 }
