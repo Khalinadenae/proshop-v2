@@ -4,6 +4,7 @@ import './homeassets/fonts/font.css'
 import {Helmet} from "react-helmet";
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import heroBanner from './homeassets/images/hero-banner.png';
+import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
@@ -51,15 +52,15 @@ const HomePage = () => {
               <div className="container">
                 <div className="hero-content">
                   <p className="hero-subtitle title">$120.00</p>
-                  <h1 className="h1 hero-title title">Man summer <br /> collection</h1>
+                  <h1 className="h1 hero-title title"> Just Landed!</h1>
                   <p className="hero-text">
-                    This is the factor that sets us apart from competition and allows us deliver a specialist business service
-                    team applies its ranging experience determining
+                Shop the latest drop from Move Plotters apperel
                   </p>
-                  <a href="#" className="btn btn-primary">
-                    <span className="span">Shop Now</span>
-                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                  </a>
+                  <Link to="/shop" className="btn btn-primary">
+            <span className="span">Shop Now</span>
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </Link>
+
                 </div>
                 <div className="hero-banner">
                   <figure className="img-holder" style={{ '--width': 704, '--height': 700 }}>
