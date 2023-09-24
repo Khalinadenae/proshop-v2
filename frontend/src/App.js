@@ -30,9 +30,8 @@ const App = () => {
       <main>
        
           <Outlet />
-    
+
       </main>
-    
     </>
   );
 };

@@ -1,0 +1,7 @@
+.card-body{
+    background-color: transparent;
+}
+
+.card{
+    --bs-card-box-shadow: 0;
+}
