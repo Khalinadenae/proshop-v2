@@ -9,7 +9,6 @@
 
 
 
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -401,7 +400,7 @@ body {
   background-color: var(--bg-white);
   border: 2px solid var(--border-eerie-black);
   box-shadow: var(--shadow-2);
-  padding: 80px 30px;
+  padding: 80px 90px;
 }
 
 .offer-card .card-title { font-size: var(--fontSize-1); }
