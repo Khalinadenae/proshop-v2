@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './assets/styles/bootstrap.custom.css';
-import './assets/styles/index.css';
+// import './assets/styles/bootstrap.custom.css';
+// import './assets/styles/index.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -32,7 +32,7 @@ import UserEditScreen from './screens/admin/UserEditScreen';
 import store from './store';
 import { Provider } from 'react-redux';
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
-import HomePage from './screens/HomePage';
+import Newhomepage from './screens/Newhomepage';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,7 +41,7 @@ const router = createBrowserRouter(
         path='/shop'
         element={<HomeScreen />}
       />
-      <Route index={true} path='/' element={<HomePage />} />
+      <Route index={true} path='/' element={<Newhomepage />} />
       <Route path='/search/:keyword' element={<HomeScreen />} />
       <Route path='/page/:pageNumber' element={<HomeScreen />} />
       <Route
