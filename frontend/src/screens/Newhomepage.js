@@ -214,7 +214,7 @@ const Newhomepage = () => {
 
 
 
-<div class="swiper-container">
+<div class="swiper-container mb-5" >
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
@@ -266,8 +266,9 @@ const Newhomepage = () => {
 
 
   <!-- categories --> */}
+  
 <section>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
           <div class="col text-center">
             <span class="eyebrow text-muted">Just In</span>
@@ -346,26 +347,7 @@ const Newhomepage = () => {
         </div>
     </section>
     
-    {/* <section class="py-0 no-overflow">
-        <div   className="image image-scroll"
-  style={{ backgroundImage: 'url(assets/images/demo/background-3.jpg)' }}
-          data--100-bottom-top="transform: translateY(0%);"
-          data-top-bottom="transform: translateY(25%);"
-          ></div>
-        <div class="container">
-          <div class="row gutter-2 gutter-md-4 justify-content-between vh-75 py-10">
-            <div class="col-md-6 align-self-end">
-              <div class="bg-white d-inline-block p-3" style={{ width: '100%', height: '50vh' }}>
-                <h2 class="fs-24"><span class="d-block text-gray">WHO WE ARE </span>more than just a brand </h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-       */}
+
       
       <section class="py-lg-0 no-overflow">
         <div class="container">
@@ -377,8 +359,8 @@ const Newhomepage = () => {
                   <h4>@Moveplottersapparel</h4>
                   <div class="nav nav-tabs flex-lg-column mt-md-3 lavalamp">
                     <a class="nav-item nav-link active" data-filter="1"></a>
-                    <a class="nav-item nav-link" data-filter="2">Men</a>
-                    <a class="nav-item nav-link" data-filter="3">Kids</a>
+                    <a class="nav-item nav-link" data-filter="2"></a>
+                    <a class="nav-item nav-link" data-filter="3"></a>
                   </div>
                 </div>
               </div>
@@ -390,42 +372,36 @@ const Newhomepage = () => {
                   <div class="owl-carousel owl-carousel--mask visible" data-items="[2,2,2,1]" data-loop="true" data-margin="10" data-nav="true">
                     <div class="card card-product">
                       <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
+                  
                         <a href="#!">
                           <img src="assets/images/demo/product-1.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-1-3.jpg" alt="Image" />
+                          {/* <img src="assets/images/demo/product-1-3.jpg" alt="Image" /> */}
                         </a>
                       </figure>
-                      <a href="" class="card-body">
+                      {/* <a href="" class="card-body">
                         <h3 class="card-title">T-shirt</h3>
                         <span class="price">$19.00</span>
-                      </a>
+                      </a> */}
                     </div>
                     <div class="card card-product">
                       <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
+                  
                         <a href="#!">
                           <img src="assets/images/demo/product-2.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-2-2.jpg" alt="Image" />
+                          {/* <img src="assets/images/demo/product-2-2.jpg" alt="Image" /> */}
                         </a>
                       </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">Swimwear</h3>
-                        <span class="price">$39.00</span>
-                      </a>
+                   
                     </div>
                     <div class="card card-product">
                       <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
+                  
                         <a href="#!">
                           <img src="assets/images/demo/product-3.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-3-3.jpg" alt="Image" />
+                          {/* <img src="assets/images/demo/product-3-3.jpg" alt="Image" /> */}
                         </a>
                       </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">Skirt</h3>
-                        <span class="price">$29.00</span>
-                      </a>
+                 
                     </div>
                   </div>
                 </div>
@@ -523,7 +499,13 @@ const Newhomepage = () => {
             </div>
           </div>
         </div>
-      </section><div class="footer-basic">
+      </section>
+      
+      
+      
+      
+      
+      <div class="footer-basic">
         <footer>
           <hr style={{ height: "2px", borderWidth: 0, color: "grey", backgroundColor: "white" }}/>
             <ul class="list-inline">
@@ -533,7 +515,7 @@ const Newhomepage = () => {
               <li class="list-inline-item"><a href="#">Sitemap</a></li>
               <li class="list-inline-item"><a href="#">Privacy Notice</a></li>
             </ul>
-            <p class="copyright">Company Name © DeepAI 2021</p>
+            <p class="copyright"> Move Plotters  © 2023</p>
         
           </footer>
       </div>
