@@ -2,6 +2,7 @@ import React from "react";
 import '../assets/css/vendor.css'; // Add this line
 import '../assets/css/homestyle.css';  // Add this line
 import '../assets/css/customcss.css'; // Add this line
+import { NavLink } from "react-router-dom";
 
 
 const Newhomepage = () => {
@@ -37,9 +38,11 @@ const Newhomepage = () => {
               </li>
          
               <li class="nav-item dropdown-lg dropdown-hover">
+                <NavLink to="/shop">
                 <a class="nav-link dropdown-toggle text-red" href="#!" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   SHOP
                 </a>
+                </NavLink>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown-3">
                   <div class="container">
                     <div class="row gutter-1">

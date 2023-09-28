@@ -11,6 +11,7 @@ import Meta from '../components/Meta';
 import '../assets/css/vendor.css'; // Add this line
 import '../assets/css/homestyle.css';  // Add this line
 import '../assets/css/customcss.css'; // Add this line
+import { NavLink } from "react-router-dom";
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -51,9 +52,11 @@ const HomeScreen = () => {
           <div class="collapse navbar-collapse order-4 order-lg-1" id="navbarMenu">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown dropdown-sm dropdown-hover">
+                <NavLink to="/">
                 <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Home
+             HOME
                 </a>
+                </NavLink>
              
               </li>
          
@@ -242,7 +245,7 @@ const HomeScreen = () => {
         <>
           <Meta />
           <h1>Latest Products</h1>
-          <Row style={{width:"90vw", margin:"0 auto"}}>
+          <Row style={{width:"90vw", margin:"90px auto"}}>
             {data.products.map((product) => (
               <Col key={product._id} xs={12} sm={6} md={6} lg={6} xl={6} className="mb-5">
                 <Product product={product} />
