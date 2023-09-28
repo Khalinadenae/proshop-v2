@@ -2,10 +2,54 @@ import React from "react";
 import '../assets/css/vendor.css'; // Add this line
 import '../assets/css/homestyle.css';  // Add this line
 import '../assets/css/customcss.css'; // Add this line
+import'../assets/css/home.css'
 import { NavLink } from "react-router-dom";
+
+import { useRef, useState } from 'react';
+// Import Swiper React components
+import { Pagination, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+
 
 
 const Newhomepage = () => {
+  const [swiperRef, setSwiperRef] = useState(null);
+
+  let appendNumber = 4;
+  let prependNumber = 1;
+
+
+  const prepend2 = () => {
+    swiperRef.prependSlide([
+      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+    ]);
+  };
+
+  const prepend = () => {
+    swiperRef.prependSlide(
+      '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
+    );
+  };
+
+  const append = () => {
+    swiperRef.appendSlide(
+      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
+    );
+  };
+
+  const append2 = () => {
+    swiperRef.appendSlide([
+      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
+      '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
+    ]);
+  };
+
 
     return (
 <div>
@@ -269,7 +313,8 @@ const Newhomepage = () => {
 
 
   <!-- categories --> */}
-  
+
+
 <section>
       <div class="container mt-5">
         <div class="row">
@@ -343,167 +388,68 @@ const Newhomepage = () => {
             </div>
           </div>
          <div class="row">
-            <div class="col text-center">
-              <a href="" class="underlined">View all products</a>
-            </div>
+           
           </div>
         </div>
     </section>
     
 
       
-      <section class="py-lg-0 no-overflow">
-        <div class="container">
-          <div class="row align-items-center gutter-1">
-            <div class="col-lg-3">
-              <div class="pr-lg-5">
-                <div class="level-1">
-                  <span class="eyebrow text-muted">Follow Our Instagram</span>
-                  <h4>@Moveplottersapparel</h4>
-                  <div class="nav nav-tabs flex-lg-column mt-md-3 lavalamp">
-                    <a class="nav-item nav-link active" data-filter="1"></a>
-                    <a class="nav-item nav-link" data-filter="2"></a>
-                    <a class="nav-item nav-link" data-filter="3"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-9">
-              <div class="row gutter-2 filtr-container">
-
-                <div class="col-12 filtr-item m-5" data-category="1" data-sort="value">
-                  <div class="owl-carousel owl-carousel--mask visible" data-items="[2,2,2,1]" data-loop="true" data-margin="10" data-nav="true">
-                    <div class="card card-product">
-                      <figure class="card-image">
-                  
-                        <a href="#!">
-                          <img src="assets/images/demo/product-1.jpg" alt="Image" />
-                          {/* <img src="assets/images/demo/product-1-3.jpg" alt="Image" /> */}
-                        </a>
-                      </figure>
-                      {/* <a href="" class="card-body">
-                        <h3 class="card-title">T-shirt</h3>
-                        <span class="price">$19.00</span>
-                      </a> */}
-                    </div>
-                    <div class="card card-product">
-                      <figure class="card-image">
-                  
-                        <a href="#!">
-                          <img src="assets/images/demo/product-2.jpg" alt="Image" />
-                          {/* <img src="assets/images/demo/product-2-2.jpg" alt="Image" /> */}
-                        </a>
-                      </figure>
-                   
-                    </div>
-                    <div class="card card-product">
-                      <figure class="card-image">
-                  
-                        <a href="#!">
-                          <img src="assets/images/demo/product-3.jpg" alt="Image" />
-                          {/* <img src="assets/images/demo/product-3-3.jpg" alt="Image" /> */}
-                        </a>
-                      </figure>
-                 
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-12 filtr-item filteredOut" data-category="2" data-sort="value">
-                  <div class="owl-carousel owl-carousel--mask visible" data-items="[2,2,2,1]" data-loop="true" data-margin="10" data-nav="true">
-                    <div class="card card-product">
-                      <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
-                        <a href="#!">
-                          <img src="assets/images/demo/product-1.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-1-3.jpg" alt="Image" />
-                        </a>
-                      </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">T-shirt</h3>
-                        <span class="price">$19.00</span>
-                      </a>
-                    </div>
-                    <div class="card card-product">
-                      <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
-                        <a href="#!">
-                          <img src="assets/images/demo/product-2.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-2-2.jpg" alt="Image" />
-                        </a>
-                      </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">Swimwear</h3>
-                        <span class="price">$39.00</span>
-                      </a>
-                    </div>
-                    <div class="card card-product">
-                      <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
-                        <a href="#!">
-                          <img src="assets/images/demo/product-3.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-3-3.jpg" alt="Image" />
-                        </a>
-                      </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">Skirt</h3>
-                        <span class="price">$29.00</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 filtr-item filteredOut" data-category="3" data-sort="value">
-                  <div class="owl-carousel owl-carousel--mask visible" data-items="[2,2,2,1]" data-loop="true" data-margin="10" data-nav="true">
-                    <div class="card card-product">
-                      <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
-                        <a href="#!">
-                          <img src="assets/images/demo/product-1.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-1-3.jpg" alt="Image" />
-                        </a>
-                      </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">T-shirt</h3>
-                        <span class="price">$19.00</span>
-                      </a>
-                    </div>
-                    <div class="card card-product">
-                      <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
-                        <a href="#!">
-                          <img src="assets/images/demo/product-2.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-2-2.jpg" alt="Image" />
-                        </a>
-                      </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">Swimwear</h3>
-                        <span class="price">$39.00</span>
-                      </a>
-                    </div>
-                    <div class="card card-product">
-                      <figure class="card-image">
-                        <a href="#!" class="action"><i class="icon-heart"></i></a>
-                        <a href="#!">
-                          <img src="assets/images/demo/product-3.jpg" alt="Image" />
-                          <img src="assets/images/demo/product-3-3.jpg" alt="Image" />
-                        </a>
-                      </figure>
-                      <a href="" class="card-body">
-                        <h3 class="card-title">Skirt</h3>
-                        <span class="price">$29.00</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
       
+  <div className="swiper-container-wrapper">
+    <div className="follow-us" 
+    style={{width:"20vw"}}>
+     <h5>
+      Follow us on Instagram
+     </h5>
+     <p> @Moveplottersapparel</p>
+    </div>
+  <Swiper
+    style={{width:"90vw"}}
+        onSwiper={setSwiperRef}
+        slidesPerView={3}
+        centeredSlides={true}
+        spaceBetween={30}
+        pagination={{
+          type: 'fraction',
+        }}
+        navigation={false}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <img src="assets/images/demo/look-4.jpg" alt="Image"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="assets/images/demo/look-4.jpg" alt="Image"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="assets/images/demo/look-4.jpg" alt="Image"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="assets/images/demo/look-4.jpg" alt="Image"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="assets/images/demo/look-4.jpg" alt="Image"/>
+        </SwiperSlide>
+      </Swiper>
+
+      {/* <p className="append-buttons">
+        <button onClick={() => prepend2()} className="prepend-2-slides">
+          Prepend 2 Slides
+        </button>
+        <button onClick={() => prepend()} className="prepend-slide">
+          Prepend Slide
+        </button>
+        <button onClick={() => append()} className="append-slide">
+          Append Slide
+        </button>
+        <button onClick={() => append2()} className="append-2-slides">
+          Append 2 Slides
+        </button>
+      </p> */}
+    </div>
+
       
       
       

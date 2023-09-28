@@ -1,0 +1,15 @@
+.swiper-container-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .follow-us {
+ 
+    text-align: center;
+    background-color: #b49898; /* Optional: Add a background color */
+    padding: 50px;
+    text-align: center;
+    margin: 50px;
+    color: wheat;
+  }
+  
