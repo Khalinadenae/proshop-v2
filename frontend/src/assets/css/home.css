@@ -10,9 +10,12 @@
     padding: 50px;
     text-align: center;
     margin: 50px;
-    color: wheat;
+color: black;
   }
   
+  .swiper-container{
+    width: 100%;
+  }
 
   .about-container {
     position: relative;

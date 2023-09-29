@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
+import { Link } from 'react-router-dom';
 
 
 const Newhomepage = () => {
@@ -215,7 +215,9 @@ const Newhomepage = () => {
             <div class="col-lg-8 text-white" data-swiper-parallax-x="-100%">
               <span class="eyebrow">New Collection</span>
               <h1 class="mb-3 text-uppercase">Summer is here</h1>
-              <a href="listing-full.html" class="btn btn-outline-white">Shop Now</a>
+              <div style={{marginBottom:"3rem"}}>
+        <Link to="/shop" className="btn btn-secondary" style={{padding:"20px 70px"}}>Shop Now </Link>
+      </div>
             </div>
           </div>
         </div>
@@ -230,7 +232,10 @@ const Newhomepage = () => {
             <div class="col-lg-8 text-white" data-swiper-parallax-x="-100%">
               <span class="eyebrow">New Collection</span>
               <h1>Casual Dresses</h1>
-              <a href="listing-full.html" class="btn btn-outline-white">Shop Now</a>
+
+              <div style={{marginBottom:"3rem"}}>
+        <Link to="/shop" className="btn btn-secondary"> Shop Now </Link>
+      </div>
             </div>
           </div>
         </div>
@@ -350,18 +355,18 @@ const Newhomepage = () => {
       
   <div className="swiper-container-wrapper">
     <div className="follow-us" 
-    style={{width:"20vw"}}>
-     <h5>
+    style={{width:"40vw"}}>
+     <h5 style={{fontSize:"3rem"}}>
       Follow us on Instagram
      </h5>
-     <p> @Moveplottersapparel</p>
+     <p style={{fontSize:"1.5rem"}}> @Moveplottersapparel</p>
     </div>
   <Swiper
-    style={{width:"90vw"}}
+    style={{width:"95vw"}}
         onSwiper={setSwiperRef}
         slidesPerView={3}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={10}
         pagination={{
           type: 'fraction',
         }}
@@ -370,7 +375,8 @@ const Newhomepage = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-        <img src="assets/images/demo/look-4.jpg" alt="Image"/>
+        <img src="assets/images/demo/look-4.jpg" alt="Image"
+        />
         </SwiperSlide>
         <SwiperSlide>
         <img src="assets/images/demo/look-4.jpg" alt="Image"/>
