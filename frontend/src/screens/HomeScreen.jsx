@@ -32,19 +32,7 @@ const HomeScreen = () => {
       )} */}
 
 <header class="header header-absolute">
-      <div class="py-1 bg-dark">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="owl-carousel owl-carousel-promo" data-loop="true" data-items="[3,3,2,1]" data-margin="10" data-nav="true">
-                <h6 class="fs-14 text-uppercase text-center text-white m-0"><i class="icon-truck mr-1 text-opaque"></i> Free Shipping and Returns</h6>
-                <h6 class="fs-14 text-uppercase text-center text-white m-0"><i class="icon-award mr-1 text-opaque"></i> 2 Years of Warranty</h6>
-                <h6 class="fs-14 text-uppercase text-center text-white m-0"><i class="icon-shield mr-1 text-opaque"></i> 30 Days Moneyback Guarantee</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+ 
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a href="index.html" class="navbar-brand order-1 order-lg-2"><img src="assets/images/logo.svg" alt="Logo"/></a>
@@ -64,53 +52,7 @@ const HomeScreen = () => {
                 <a class="nav-link dropdown-toggle text-red" href="#!" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   SHOP
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown-3">
-                  <div class="container">
-                    <div class="row gutter-1">
-                      <div class="col-lg-6">
-                        <div class="card card-tile">
-                          <figure class="card-image equal equal-50">
-                            <span class="image" 
-                       style={{ backgroundImage: 'url(assets/images/demo/menu-sale-1.jpg)' }}></span>
-                          </figure>
-                          <div class="card-footer p-1">
-                            <div class="bg-white p-2">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4 class="fs-20"><a href="#">50% Sale on Cardigans</a></h4>
-                                </div>
-                                <div class="col text-right">
-                                  <a href="" class="underline">Shop Now</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="card card-tile">
-                          <figure class="card-image equal equal-50">
-                            <span class="image"
-                            
-                            style={{ backgroundImage: 'url(assets/images/demo/menu-sale-2.jpg)' }}></span>
-                          </figure>
-                          <div class="card-footer p-1">
-                            <div class="bg-white p-2">
-                              <div class="row align-items-center">
-                                <div class="col">
-                                  <h4 class="fs-20"><a href="#">20% Sale on Jewelery</a></h4>
-                                </div>
-                                <div class="col text-right">
-                                  <a href="" class="underline">Shop Now</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            
               </li>
             </ul>
           </div>
