@@ -16,6 +16,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
 
+import logo from '../assets/images/demo/logo/logoo.png'
 
 const Newhomepage = () => {
   const [swiperRef, setSwiperRef] = useState(null);
@@ -54,16 +55,26 @@ const Newhomepage = () => {
     return (
 <div>
 
-<header class="header header-absolute">
+<header class="header header-absolute" style={{backgroundColor:"rgba(28,26,23,.8)", borderBottom:"3px solid #d7cdb9"}}>
  
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="index.html" class="navbar-brand order-1 order-lg-2"><img src="assets/images/logo.svg" alt="Logo"/></a>
+      <div class="container" style={{color:"#d7cdb9"}}>
+      
+        <nav class="navbar navbar-expand-lg" >
+          {/* logo */}
+          <a href="index.html" class="navbar-brand order-1 order-lg-2">    <img src={logo} alt='ProShop'  className="logo"style={{height:"auto" , width:"250px"}}
 
+
+          
+        
+          />  </a>
+  <h5 className="logo-small-devices" style={{color:"#d7cdb9"}}>
+          Move Plotters
+        </h5>
           <div class="collapse navbar-collapse order-4 order-lg-1" id="navbarMenu">
             <ul class="navbar-nav mr-auto">
+          
               <li class="nav-item dropdown dropdown-sm dropdown-hover">
-                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{color:"#d7cdb9"}}>
                   Home
                 </a>
              
@@ -71,7 +82,7 @@ const Newhomepage = () => {
          
               <li class="nav-item dropdown-lg dropdown-hover">
                 <NavLink to="/shop">
-                <a class="nav-link dropdown-toggle text-red" href="#!" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{color:"#d7cdb9"}}>
                   SHOP
                 </a>
                 </NavLink>
@@ -87,7 +98,7 @@ const Newhomepage = () => {
       <!-- user area --> */}
       <li class="nav-item dropdown dropdown-md dropdown-hover">
         <a class="nav-icon dropdown-toggle" id="navbarDropdown-6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icon-user d-none d-lg-inline-block"></i>
+          <i class="icon-user d-none d-lg-inline-block" style={{color:"#d7cdb9"}}></i>
           <span class="d-inline-block d-lg-none">Account</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown-6">
@@ -127,7 +138,7 @@ const Newhomepage = () => {
       <!-- cart --> */}
       <li class="nav-item dropdown dropdown-md dropdown-hover">
         <a class="nav-icon dropdown-toggle" id="navbarDropdown-8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icon-shopping-bag d-none d-lg-inline-block"></i>
+          <i class="icon-shopping-bag d-none d-lg-inline-block" style={{color:"#d7cdb9"}}></i>
           <span class="d-inline-block d-lg-none">Bag</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown-8">
@@ -414,7 +425,7 @@ const Newhomepage = () => {
       
       <div class="footer-basic">
         <footer>
-          <hr style={{ height: "2px", borderWidth: 0, color: "grey", backgroundColor: "white" }}/>
+          <hr style={{ height: "2px", borderWidth: 0, color: "grey", backgroundColor: "#adaca3" }}/>
             <ul class="list-inline">
               <li class="list-inline-item"><a href="#">Home</a></li>
               <li class="list-inline-item"><a href="#">Services</a></li>
