@@ -67,7 +67,7 @@ const Newhomepage = () => {
           
         
           />  </a>
-  <h5 className="logo-small-devices" style={{color:"#d7cdb9"}}>
+  <h5 className="logo-small-devices">
           Move Plotters
         </h5>
           <div class="collapse navbar-collapse order-4 order-lg-1" id="navbarMenu">
@@ -218,14 +218,15 @@ const Newhomepage = () => {
     <div class="swiper-wrapper">
 
       <div class="swiper-slide">
-        <div class="image" 
+        <div class="hero-image" >
+{/*         
+        // style={{ backgroundImage: 'url(assets/images/demo/background-2.jpeg)' }}> */}
         
-        style={{ backgroundImage: 'url(assets/images/demo/background-2.jpg)' }}></div>
-        <div class="container">
+        </div>
+        <div class="hero-container">
           <div class="row align-items-end vh-100">
-            <div class="col-lg-8 text-white" data-swiper-parallax-x="-100%">
-              <span class="eyebrow">New Collection</span>
-              <h1 class="mb-3 text-uppercase">Summer is here</h1>
+            <div class="col-lg-8 mb-4 text-white" data-swiper-parallax-x="-100%">
+              <span class="eyebrow mb-5 " style={{color:"#D7CDB9"}}> Shop the latest drop from Move Plotters apparel</span>
               <div style={{marginBottom:"3rem"}}>
         <Link to="/shop" className="btn btn-secondary" style={{padding:"20px 70px"}}>Shop Now </Link>
       </div>

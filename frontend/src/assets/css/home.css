@@ -47,6 +47,20 @@ color: black;
     text-transform: uppercase;
     font-size: 1.2rem;
   }
+
+
+  .hero-image{
+    background-image: url('../images/68A901AB-91AA-4B46-88D6-88C460D27E43 (1).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* This will make the div cover the full height of the viewport */
+    width: 100%; 
+    background-position: center top 20%;
+
+  }
+
+
+
   @media screen and (max-width: 1200px) {
 .centered{
   width: 90vw;
@@ -71,4 +85,28 @@ color: black;
     }
       }
     
+      .hero-container {
+        position: absolute;
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        text-align: center;
+        color: #fff; /* Set text color to white */
+        display: flex;
+      }
     
+      .eyebrow {
+        font-size: 1.5rem;
+        text-align: left;
+        font-weight: 100;
+      }
+    
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+    
+      .btn {
+        padding: 20px 70px;
+        font-size: 1rem;
+      }
