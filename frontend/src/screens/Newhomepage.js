@@ -55,9 +55,9 @@ const Newhomepage = () => {
     return (
 <div>
 
-<header class="header header-absolute" style={{backgroundColor:"rgba(28,26,23,.8)", borderBottom:"3px solid #d7cdb9"}}>
+<header class="header header-absolute" style={{backgroundColor:"black", borderBottom:"3px solid #d7cdb9"}}>
  
-      <div class="container" style={{color:"#d7cdb9"}}>
+      <div class="container" style={{color:"white"}}>
       
         <nav class="navbar navbar-expand-lg" >
           {/* logo */}
@@ -98,7 +98,7 @@ const Newhomepage = () => {
       <!-- user area --> */}
       <li class="nav-item dropdown dropdown-md dropdown-hover">
         <a class="nav-icon dropdown-toggle" id="navbarDropdown-6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icon-user d-none d-lg-inline-block" style={{color:"#d7cdb9"}}></i>
+          <i class="icon-user d-none d-lg-inline-block" style={{color:"#fff"}}></i>
           <span class="d-inline-block d-lg-none">Account</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown-6">
@@ -138,7 +138,7 @@ const Newhomepage = () => {
       <!-- cart --> */}
       <li class="nav-item dropdown dropdown-md dropdown-hover">
         <a class="nav-icon dropdown-toggle" id="navbarDropdown-8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="icon-shopping-bag d-none d-lg-inline-block" style={{color:"#d7cdb9"}}></i>
+          <i class="icon-shopping-bag d-none d-lg-inline-block" style={{color:"#fff"}}></i>
           <span class="d-inline-block d-lg-none">Bag</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown-8">
@@ -219,26 +219,26 @@ const Newhomepage = () => {
 
       <div class="swiper-slide">
         <div class="hero-image" >
-{/*         
+{/* {/*         
         // style={{ backgroundImage: 'url(assets/images/demo/background-2.jpeg)' }}> */}
-        
+       
         </div>
         <div class="hero-container">
           <div class="row align-items-end vh-100">
-            <div class="col-lg-8 mb-4 text-white" data-swiper-parallax-x="-100%">
+            {/* <div class="col-lg-8 mb-4 text-white" data-swiper-parallax-x="-100%">
               <span class="eyebrow mb-5 " style={{color:"#D7CDB9"}}> Shop the latest drop from Move Plotters apparel</span>
               <div style={{marginBottom:"3rem"}}>
         <Link to="/shop" className="btn btn-secondary" style={{padding:"20px 70px"}}>Shop Now </Link>
       </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
-      <div class="swiper-slide">
+      {/* <div class="swiper-slide">
         <div class="image image--overlay" 
         
-        style={{ backgroundImage: 'url(assets/images/demo/background-1.jpg)' }}></div>
+        style={{ backgroundImage: 'url(assets/images/demo/background-1.jp)' }}></div>
         <div class="container">
           <div class="row align-items-end vh-100">
             <div class="col-lg-8 text-white" data-swiper-parallax-x="-100%">
@@ -251,10 +251,10 @@ const Newhomepage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
-    <div class="swiper-footer">
+    {/* <div class="swiper-footer">
       <div class="container">
         <div class="row justify-content-end align-items-center">
           <div class="col-lg-6 text-right">
@@ -262,24 +262,38 @@ const Newhomepage = () => {
               {/* <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div> */}
-            </div>
+            {/* </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> */} 
+
   </div>
   {/* <!-- Hoerosection end -->
 
 
   <!-- categories --> */}
-
+    <div class="about-container">
+  <img src="assets/images/demo/look-4.jpg" alt="Snow" style={{width:"100vw", height:"50vh", margin:"30px 0", opacity:".8"}}/>
+  <div class="centered">
+    <h4 style={{color:"white"}}>
+      Who We Are
+    </h4>
+    <p>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+  </div>
+</div>
+      
 
 <section>
       <div class="container mt-5">
         <div class="row">
           <div class="col text-center">
-            <span class="eyebrow text-muted">Just In</span>
-            <h2>Shop New Arrivals</h2>
+            <span style={{color:"#231F20", fontSize:"1.3rem"}}>Just In</span>
+            <h2>Shop the latest drop <br></br> from Move Plotters apparel
+
+            </h2>
           </div>
         </div>
         <div class="row gutter-1">
@@ -307,13 +321,18 @@ const Newhomepage = () => {
             <div class="card card-product">
               <figure class="card-image equal">
                 <a href="#!" class="image">
-                  <img src="assets/images/demo/look-3.jpg" alt="Image" />
-                  <img src="assets/images/demo/look-3-1.jpg" alt="Image" />
+                  <img  src={require('../assets/images/demo/HFD02231.jpg')}
+ />
+               <img
+                  src={require('../assets/images/demo/look-3-11.jpg')}
+                  alt="Image"
+             
+                  />
                 </a>
               </figure>
-              <a href="" class="card-body">
-                <h3 class="card-title">Gold Earrings</h3>
-                <span class="price">$260.00</span>
+              <a href="" class="card-body" style={{color:"pink"}}>
+                <h3 class="card-title">Create Your Own Path hat </h3>
+                <span class="price">$50.00</span>
               </a>
             </div>
           </div>
@@ -352,18 +371,7 @@ const Newhomepage = () => {
         </div>
     </section>
     
-    <div class="about-container">
-  <img src="assets/images/demo/look-4.jpg" alt="Snow" style={{width:"100vw", height:"50vh", margin:"30px 0", opacity:".8"}}/>
-  <div class="centered">
-    <h4 style={{color:"white"}}>
-      Who We Are
-    </h4>
-    <p>
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-  </div>
-</div>
-      
+
       
   <div className="swiper-container-wrapper">
     <div className="follow-us" 

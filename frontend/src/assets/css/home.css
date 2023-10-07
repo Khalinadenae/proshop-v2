@@ -50,13 +50,12 @@ color: black;
 
 
   .hero-image{
-    background-image: url('../images/68A901AB-91AA-4B46-88D6-88C460D27E43 (1).jpg');
-    background-size: cover;
+    background-image: url('../images/demo/logo/heroimage.png');
+    background-size: contain;
     background-position: center;
-    height: 100vh; /* This will make the div cover the full height of the viewport */
+    height: 100vh;
+  /* This will make the div cover the full height of the viewport */
     width: 100%; 
-    background-position: center top 20%;
-
   }
 
 
@@ -109,4 +108,11 @@ color: black;
       .btn {
         padding: 20px 70px;
         font-size: 1rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        .hero-image{
+      height: 100vh;
+      background-repeat: no-repeat;
+        }
       }
